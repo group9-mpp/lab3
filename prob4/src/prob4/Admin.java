@@ -13,4 +13,14 @@ public class Admin {
 
 		return totalRent;
 	}
+	public static ArrayList<Property> listAllProperties(String city,ArrayList<Property> properties){
+		ArrayList<Property> filteredList = new ArrayList<Property>();
+		
+		for (Property property : filteredList) {
+			if(property.getAddress().getCity().equalsIgnoreCase(city)) {
+				filteredList.add(property);
+			}
+		}
+		return filteredList;
+	}
 }
