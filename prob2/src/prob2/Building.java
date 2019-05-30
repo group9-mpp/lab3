@@ -9,28 +9,28 @@ public class Building {
 
 	private List<Apartment> apartments;
 
-	Building(double maintenace) {
+	public Building(double maintenace) {
 		this.apartments = new ArrayList<Apartment>();
 		this.maintenace = maintenace;
 	}
 
-	void addApartment(Apartment apartment) {
+	public void addApartment(Apartment apartment) {
 		apartments.add(apartment);
 	}
 
-	List<Apartment> getApartments() {
+	public List<Apartment> getApartments() {
 		return apartments;
 	}
 
 	public double getProfit() {
 
-		double profit = 0 - maintenace;
+		double totalRent = 0;
 
 		for (Apartment apartment : apartments) {
-			profit += apartment.rent;
+			totalRent += apartment.getRent();
 		}
 
-		return profit;
+		return totalRent - maintenace;
 
 	}
 

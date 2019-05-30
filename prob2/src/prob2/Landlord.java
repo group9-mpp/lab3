@@ -7,24 +7,24 @@ public class Landlord {
 	private List<Building> buildings;
 	private String name;
 
-	Landlord(String name) {
+	public Landlord(String name) {
 		this.buildings = new ArrayList<Building>();
 		this.name = name;
 	}
 
-	void addBuilding(Building building) {
+	public void addBuilding(Building building) {
 		buildings.add(building);
 	}
 
-	List<Building> getBuildings() {
+	public List<Building> getBuildings() {
 		return buildings;
 	}
 
-	String getName() {
+	public String getName() {
 		return name;
 	}
 
-	double getProfit() {
+	public double getProfit() {
 
 		double profit = 0;
 

@@ -1,9 +1,14 @@
 package prob2;
 
 public class Apartment {
-	double rent = 0;
+	private double rent = 0;
 
-	Apartment(double rent) {
+	public Apartment(double rent) {
 		this.rent = rent;
 	}
+
+	public double getRent() {
+		return rent;
+	}
+	
 }

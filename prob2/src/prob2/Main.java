@@ -19,7 +19,6 @@ public class Main {
 		}
 
 		System.out.printf("\n %s profit is : $ %,.2f", landLord.getName(), landLord.getProfit());
-
 	}
 
 	public static double getRandomNumber() {
