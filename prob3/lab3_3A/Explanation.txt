@@ -1,0 +1,5 @@
+It does not make sense to use inheritance in this case because:
+
+1: A Circle is not a cylinder
+2: A Circle does not have a height and so creating a Circle object of Cylinder type will be problematic.
+Also, we cannot compute the volume of a Circle so the relationship is flawed.
